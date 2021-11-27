@@ -1,0 +1,13 @@
+
+SELECT XMLELEMENT("Funcionario"
+    , XMLATTRIBUTES(
+        F.CPF AS "CPF"
+    )
+    , XMLFOREST(
+        F.nome AS "Nome"
+    )
+    , XMLFOREST(
+        F.sexo AS "Sexo"
+     )
+)
+FROM Funcionario F
