@@ -1,23 +1,38 @@
+# Banco de Dados de uma Empresa de Software
 
-# Banco de dados de uma empresa de Software
+Este é um pequeno projeto de banco de dados com o tema **Empresa de Software**, desenvolvido utilizando **Oracle** e a linguagem **PL/SQL**.
 
-Pequeno projeto de banco dados com o tema Empresa de software, usando tecnologia Oracle e linguagem PL/SQL
+## Etapas do Projeto
 
-## ETAPAS
+1. **Modelo Conceitual**: O projeto começou com a definição do minimundo, onde a partir da linguagem natural foi criado o modelo conceitual, representado pelo arquivo **Minimundo + Diagrama**.
 
-1- Comecei pelo minimundo e a partir da linguagem natural foi feita o modelo conceitual (arquivo Minimundo + Diagrama)
+2. **Modelo Lógico**: Após o modelo conceitual, foi feita a modelagem lógica, com foco na **normalização** dos dados para garantir a integridade e eficiência do banco de dados.
 
-2- Logo em seguida modelei o projeto para o modelo lógico, fazendo a normalização
+3. **Modelo Físico**: A implementação final foi realizada no modelo físico, utilizando **PL/SQL** com comandos como:
+   - `CREATE TABLE`
+   - `INSERT INTO`
+   - **Funções**
+   - **Gatilhos**
+   - **Cursores**
+   - **Procedimentos**
+   - **Consultas simples e complexas**
 
-3- E por fim o modelo fisico, implementado com linguagem PLSQL com comandos de CREATE TABLE, INSERT INTO, FUNÇÕES, GATILHOS, CURSORES, PROCEDIMENTOS E ALGUMAS CONSULTAS (Simples e complexas)
+## Descrição do Projeto
 
-# Projeto trilha KMM SQL/PL   – Empresa de Software
+Este projeto, parte da trilha **KMM SQL/PL – Empresa de Software**, visa modelar os dados de uma empresa de software. A seguir, estão os principais detalhes:
 
-Descrição
+- Um funcionário possui os seguintes atributos: 
+  - `CPF` (chave primária)
+  - Nome
+  - Data de nascimento
+  - Sexo
+  - Salário
+  - Endereço (incluindo CEP)
+  - Telefone (multivalorado, modelado em uma tabela separada com relacionamento 1:N)
+  
+- Relacionamentos:
+  - **Auto-relacionamento**: Um funcionário pode supervisionar outros funcionários, mas é supervisionado por apenas um (relação N:1).
+  - **Projetos**: Um funcionário pode participar de N projetos e cada projeto pode ter N funcionários. Para modelar essa relação N:N, foi criada a tabela intermediária **Participa**, contendo as chaves primárias de ambos.
+  - **Departamento**: Um funcionário pode chefiar um departamento, que é identificado por um código e uma descrição. Cada departamento é chefiado por um único funcionário (relação 1:1).
 
-Criei um diagrama com o tema empresa de software, onde existe um funcionário com os dados: CPF (CHAVE PRIMÁRIA), nome, data de nascimento, sexo, salário, descrição do endereço e CEP e telefone, como telefone é um atributo multivalorado decidi fazer uma tabela a parte com relacionamento 1:N.
-Um empregado pode supervisionar outros empregados que são supervisionados apenas por um (auto relacionamento N:1). Esses funcionários participam de N projetos, que possui um código e uma descrição, e esses projetos participam N funcionários (Como era uma relação N:N criei a tabela participa para pegar as chaves primárias de ambas).
-Um funcionário pode chefiar um departamento, que possui um código e uma descrição, no qual deve ser chefiado por um único funcionário (1:1).
-
-
-
+Este projeto explora o ciclo completo de desenvolvimento de um banco de dados, desde o modelo conceitual até a implementação física em PL/SQL, focando em funcionalidades e boas práticas de modelagem de dados.
