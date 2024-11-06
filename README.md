@@ -4,7 +4,7 @@ Este é um pequeno projeto de banco de dados com o tema **Empresa de Software**,
 
 ## Etapas do Projeto
 
-1. **Modelo Conceitual**: O projeto começou com a definição do minimundo, onde a partir da linguagem natural foi criado o modelo conceitual, representado pelo arquivo **Minimundo + Diagrama**.
+1. **Modelo Conceitual**: O projeto começou com a definição do minimundo (arquivo Minimundo - Regra de negócio.txt), onde a partir da linguagem natural foi criado o modelo conceitual, representado pelo arquivo **Diagrama ER**.
 
 2. **Modelo Lógico**: Após o modelo conceitual, foi feita a modelagem lógica, com foco na **normalização** dos dados para garantir a integridade e eficiência do banco de dados.
 
