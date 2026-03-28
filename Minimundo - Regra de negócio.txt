@@ -1,3 +1,5 @@
+
+
 Criei um diagrama com o tema empresa de software, onde existe um funcionário com os dados: 
 CPF (CHAVE PRIMÁRIA), nome, data de nascimento, sexo, salário, descrição do endereço e CEP e telefone, 
 como telefone é um atributo multivalorado decidi fazer uma tabela a parte com relacionamento 1:N.
