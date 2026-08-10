@@ -1,6 +1,5 @@
 /*Identar no sql developer -> ctrl + f7*/
 
--- BRICANDO DE BRANCH AQUI
 
 /*Retorna os nomes de tecnicos junto onde concluiu e a sigla da instituição*/
 SELECT F.NOME, I.NOME, I.SIGLA FROM FUNCIONARIO F, TECNICO T, INSTITUICAO I WHERE F.CPF = T.CPF AND T.CODIGO = I.CODIGO;
